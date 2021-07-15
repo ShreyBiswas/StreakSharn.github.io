@@ -1,2 +1,4 @@
-const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
+var myHeading = document.querySelector('p');
+myHeading.textContent = 'This is being displayed by Javascript (well, Typescript) - not HTML/CSS!';
+myHeading.textContent = 'Replace';
+myHeading.asdas;
