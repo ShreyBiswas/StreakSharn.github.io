@@ -1,5 +1,8 @@
-var myHeading: HTMLElement = document.querySelector("p");
-myHeading.textContent ="This is being displayed by Javascript (well, Typescript) - not HTML/CSS!";
+function changeText(tag: string, text: string) {
+  const myHeading: HTMLElement = document.querySelector(tag);
+  myHeading.textContent = text;
+}
 
-myHeading.textContent = "Replace";
-let x: Number = 2;
+document.querySelector('html').onclick = function () {
+  changeText('p', 'This is being displayed by Javascript (well, Typescript) - not HTML/CSS!');
+};
