@@ -1,7 +1,29 @@
-function changeText(tag, text) {
-    var myHeading = document.querySelector(tag);
-    myHeading.textContent = text;
+function changeText(id, text) {
+    var element = document.querySelector("#" + id);
+    element.textContent = text;
 }
-document.querySelector('html').onclick = function () {
-    changeText('p', 'This is being displayed by Javascript (well, Typescript) - not HTML/CSS!');
-};
+function changeImage(id, path) {
+    if (id === void 0) { id = null; }
+    var element = document.querySelector("#" + id);
+    element.setAttribute('src', path);
+}
+function cycleImage(id, candidates) {
+    var element = document.querySelector("#" + id);
+    for (var i = 0; i < candidates.length; i += 1) {
+        if (element.getAttribute('src') === candidates[i]) {
+            if (i === candidates.length - 1) {
+                changeImage(id, candidates[0]);
+                return;
+            }
+            changeImage(id, candidates[i + 1]);
+            return;
+        }
+    }
+}
+function checkEvent(id, event, func, info) {
+    var element = document.querySelector("#" + id);
+    element.addEventListener(event, function () { func(id, info); }); // when event is clicked, func triggers and passes info
+}
+checkEvent('logos', 'click', cycleImage, ['assets\\images\\qgss_logo.png', 'assets\\images\\qxq_logo.jpeg']);
+checkEvent('changer', 'click', changeText, 'This is being displayed by Javascript (well, Typescript) - not HTML/CSS!');
+var theButton = document.querySelector('button');
