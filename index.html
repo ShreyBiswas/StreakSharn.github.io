@@ -1,45 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 
-    <head>
+<head>
+    <meta name="author" content="Shrey Biswas">
+    <meta name="description" content="Portfolio of work by Shrey Biswas, a UK-based aspiring Software Engineer.">
 
-        <!-- Downloading Montserrat font from Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        <link href="styles/style.css" rel="stylesheet">
+    <meta charset="utf-8">
 
-        <title>Shrey Biswas' Portfolio</title>
-    </head>
+    <link rel="icon" type="image/png" href="assets\icons\icon.png" />
 
-    <body>
+    <link rel="stylesheet" href="styles/style.css">
 
-        <div class="header">
-            <h1>Shrey Biswas</h1>
-            <h2>A personal portfolio for <strong>Shrey Biswas</strong>, or StreakSharn.</h2>
-        </div>
+    <script src="./scripts/main.ts" defer></script>
 
-        <div class="text">
-            <h4>My name is Shrey Biswas.</h4>
 
-            <p id='changer'>Click to replace.</p>
+    <!-- Downloading Montserrat (Header) and Lora (Text) fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:ital,wght@0,200;0,300;0,600;1,200;1,300;1,600&display=swap"
+        rel="stylesheet">
 
-            <p>I'm a Sixth Form student in the UK.</p>
+    <title>Shrey Biswas' Portfolio</title>
+</head>
 
-            <p>I'm an aspiring Computer Science student, who's particularly interested in Quantum Computing and Artificial Intelligence. <br> Here's some work I've done.
-                <ul>
-                    <li><a href="https://github.com/StreakSharn/Maze-Algorithms">Maze Algorithms</a></li>
-                    <li><a href="https://github.com/StreakSharn/Grovers-Algorithm-Visualisation">A Visualisation of Grover's Algorithm</a></li>
-                </ul>
+<body>
 
-            </p>
-        </div>
-        <button>Change User</button>
+    <div class="top_navbar">
+        <ul>
+            <li class="navbar_options"><a href="index.html" style="color:black;text-decoration: none;">Home</a></li>
+            <li class="navbar_options"><a href="projects/index.html" style="color:black;text-decoration: none;">Projects</a></li>
+        </ul>
+    </div>
 
-        <img src='assets\images\qxq_logo.jpeg' id='logos'>
 
-        <script src="./scripts/main.js"></script>
-    </body>
+    <h1>Shrey Biswas</h1>
+
+
+    <h2>A personal portfolio for <span style="font-weight:300">Shrey Biswas</span>, or StreakSharn.</h2>
+    <hr>
+
+    <main>
+
+        <h4>My name is Shrey Biswas.</h4>
+
+
+
+        <p id="changer">Click to replace.</p>
+
+        <p>I'm a Sixth Form student in the UK.</p>
+        <hr>
+        <p>I'm also an aspiring Computer Science student, who's particularly interested in Quantum Computing and
+            Artificial Intelligence.<br>
+            Here's my <a href="projects/index.html">Project Homepage.</a></p>
+
+    </main>
+    <button>Change User</button>
+
+    <img src="assets\images\qxq_logo.jpeg" id="logos">
+
+
+</body>
+
 
 
 

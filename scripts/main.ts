@@ -32,4 +32,18 @@ function checkEvent(id: string, event: string, func: Function, info: any) {
 checkEvent('logos', 'click', cycleImage, ['assets\\images\\qgss_logo.png', 'assets\\images\\qxq_logo.jpeg']);
 checkEvent('changer', 'click', changeText, 'This is being displayed by Javascript (well, Typescript) - not HTML/CSS!');
 
+function prompter(text: string) {
+  const named = prompt(text);
+  sessionStorage.name = named;
+}
+
 const theButton = document.querySelector('button');
+
+theButton.onclick = () => { prompter('say smethin'); };
+
+/* if (!sessionStorage.name) {
+  prompter('say something');
+} else {
+  alert(sessionStorage.name);
+}
+*/

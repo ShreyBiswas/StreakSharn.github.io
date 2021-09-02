@@ -1,43 +1,67 @@
 html {
-    font-size: 20px;
-    font-family:Montserrat;
-    margin: 0 auto;
-    padding: 0 auto;
+    font-size: 125%;
 }
 
 body {
-    margin:0;
-    background-color: rgb(202, 230, 255);
+    font-family:'Lora',serif;
+    font-weight:400;
+    margin: 0;
+    padding: 0;
 }
 
-.header {
+header {
+    font-family:'Montserrat',sans-serif;
 }
 
-.text {
-    padding: 30px;
-    background-color: white
+.top_navbar {
+    margin: 0;
+    float:left;
+    box-shadow: 0 0 0 0, 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    display:inline;
+    background-color: rgb(202, 230, 255)
+}
+.navbar_options {
+    padding: 3px 7px;
+    font-family:'Montserrat',sans-serif;
+    border:none;
+    display:inline-block;
 }
 
 
 h1 {
-
-
-    margin-top: 100px;
-    margin-bottom: 50px;
+    background-image:linear-gradient(rgb(202, 230, 255),rgb(255,255,255));
+    margin:0;
+    padding-top: 100px;
+    padding-bottom: 50px;
     padding: 0px,auto;
-
-
-    font-size: 60px;
+    font-weight:300;
+    font-size: 3.75em;
     text-align: center;
 }
 
 h2 {
-    color:grey;
-
+    font-weight:200;
+    font-size: 2.5em;
     text-align: center;
 }
 
-h3, h4, p, li {
+h3 {
+    font-size: 2em;
+    font-weight:200;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight:200;
+}
+
+p {
+    font-size: 1em;
+    font-weight:300;
+}
+
+h3, h4, p {
     width:1000px;
     margin: 0 50px;
     padding: 20px 20px 20px 20px;
@@ -48,14 +72,11 @@ p, li{
 }
 
 
-
 img {
     width: 100px;
     display:block;
     margin: 0 auto;
 }
-
-
 
 
 
