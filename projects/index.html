@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="..\styles\style.css">
 
-    <script src="../scripts/main.ts" defer></script>
+    <script src="../scripts/project.js" defer></script>
 
 
     <!-- Downloading Montserrat (Header) and Lora (Text) fonts from Google Fonts -->
@@ -28,8 +28,8 @@
 
     <div class="top_navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects/index.html">Projects</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
         </ul>
     </div>
 
@@ -38,16 +38,30 @@
     <h2 style="text-transform: uppercase;">Projects</h2>
     <hr>
 
+    <a href="https://github.com/StreakSharn/Maze-Algorithms" target="_blank">
     <div class="project_card">
-        <img src="http://"
+        <video loop muted playsinline>
+            <source src="https://github.com/StreakSharn/Maze-Algorithms/blob/main/DFS_anim.mp4?raw=true" type="video/mp4">
+        </video>
+        <div>
         <h3>Maze Solver</h3>
-        <p>Generates and solves mazes.</p>
+        <p>This uses Depth-First Maze Generation (or manual input) to create a maze.
+            There is then a set of algorithms which can be used to solve the maze - Depth-First Search, which uses backtracking; Breadth-First Search, which guarantees the shortest path, and A* Search, a heuristic and approximate search algorithm.</p>
+        </div>
     </div>
+    </a>
 
+    <a href="https://github.com/StreakSharn/Grovers-Algorithm-Visualisation" target="_blank">
     <div class="project_card">
-        <h3>Grover's Algorithm</h3>
-        <p>Quantum Search Algorithm on unsorted spaces</p>
+        <video loop muted playsinline onmouseover="this.play()" onmouseout="this.pause();this.currentTime = 0;">
+            <source src="https://github.com/StreakSharn/Grovers-Algorithm-Visualisation/blob/main/animation.mp4?raw=true" type="video/mp4">
+        </video>
+        <div>
+        <h3>Grover's Algorithm Visualisation</h3>
+        <p>Grover's Algorithm is a Quantum Algorithm to efficiently find a solution in an unsorted problem space. This is a mathematical visualisation of the algorithm converging on the solution.</p>
+        </div>
     </div>
+</a>
 
 </body>
 
